@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/pages/products.html">Products</a>
+        </li>
+        <li>
+            <a href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+            <a href="/about.html">About</a>
+        </li>
+    </ul>
+    <h1>About</h1>
+
+    <!--The following code creates a table.-->
+    <table>
+        <!--This is the title of the table-->
+        <caption>Opening hours:</caption>
+        <!--Here we declare table header: the names of columns. The formatting of the 
+        header is different form that of the rows.-->
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>From</th>
+                <th>Until</th>
+            </tr>
+        </thead>
+        <!--If we declare a header for the table, we the need to enclose the rows of the table in the table body.-->
+        <tbody>
+            <!--And now we declare the rows of the table-->
+            <tr>
+                <!--Within each row we declare the contents of the cells.-->
+                <td>Monday</td>
+                <td>11:00</td>
+                <td>21:00</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <!--This is how you merge two cells of the same row.-->
+                <td colspan="2">closed</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>11:00</td>
+                <!--This is how you merge cells: In this example the cell in the  upper row spans two rows vertically,
+                and the corresponding cell is missing from the row underneath. But we can merge more than two cells too.-->
+                <td rowspan="2">21:00</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>11:00</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>11:00</td>
+                <td>23:00</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td rowspan="2">08:00</td>
+                <td>23:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>21:00</td>
+            </tr>
+        </tbody>
+        <!--We can declare a footer for the table-->
+        <tfoot>
+            <tr>
+                <td colspan="3">&copy; Ye Olde Oak Inn, 2019</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
